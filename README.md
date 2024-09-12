@@ -9,3 +9,7 @@ The lessons in this course are around Neural Networks and the Transformer archit
 
 [Learning from data](/notes/learning-from-data.ipynb)
 
+[Introduction to Neural Networks](/notes/nn-intro.ipynb)
+
+[Types of Neural Networks](/notes/types-of-neural-networks.ipynb)
+
