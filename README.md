@@ -7,6 +7,12 @@ I put this course together to both learn about and potentially educate others th
 
 My goal was to try and explain it to myself in a way that a motivated High School student could follow along.
 
+The material here is sourced from:
+ - [Andrej Karpathy - NN-Zero-To-Hero](https://github.com/karpathy/nn-zero-to-hero)
+ - [Vik Parchuri - Zero_To_GPT](https://github.com/VikParuchuri/zero_to_gpt/tree/master?tab=readme-ov-file)
+ - [Tivadar Danka - Mathematics of Machine Learining](https://tivadardanka.com/mathematics-of-machine-learning-preview)
+ - [CS-231 Stanford University](https://cs231n.github.io/)
+
 1. Math Fundamentals
 Lessons on basics of linear algerba and calculus
   - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
