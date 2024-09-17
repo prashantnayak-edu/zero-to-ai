@@ -27,9 +27,9 @@ The material here is sourced from:
 
 3. **Introduction to Neural Networks**
    - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
-   - [Types of Neural Networks](/notes/types-of-neural-networks.ipynb)
-   - [MicroGrad: Spelled out intro to neural networks](/notes/micrograd1.ipynb)
-   - [MicroGrad: Training a Neural Network (Backpropagation)](/notes/micrograd2.ipynb)
+   - [Types of Neural Networks](/notes/nn-types.ipynb)
+   - [MicroGrad: Neural Networks - Forward Pass & Backpropagation](/notes/nn-forward-backprop.ipynb)
+   - [MicroGrad: Neural Networks - Training](/notes/micrograd2.ipynb)
 
 4. **Dense Neural Networks**
 
