@@ -19,28 +19,30 @@ The material here is sourced from:
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
    - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
    - [Vectors](/notes/vector.ipynb)
+
+3. **Learning from data**
+   - [Learning from data](/notes/learning-from-data.ipynb)
    - [Gradient Descent](/notes/gradient-descent.ipynb)
    - [Stochastic Gradient Descent](/notes/sgd.ipynb)
 
-2. **Introduction to Neural Networks**
+3. **Introduction to Neural Networks**
    - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
    - [Types of Neural Networks](/notes/types-of-neural-networks.ipynb)
-   - [Learning from data](/notes/learning-from-data.ipynb)
    - [MicroGrad: Spelled out intro to neural networks](/notes/micrograd1.ipynb)
    - [MicroGrad: Training a Neural Network (Backpropagation)](/notes/micrograd2.ipynb)
 
-3. **Dense Neural Networks**
+4. **Dense Neural Networks**
 
-4. **Classification with Neural Networks**
+5. **Classification with Neural Networks**
 
-5. **Recurrent Neural Networks**
+6. **Recurrent Neural Networks**
 
-6. **Optimization and Regularization**
+7. **Optimization and Regularization**
 
-7. **Vector Embeddings**
+8. **Vector Embeddings**
 
-8. **Working with Text (basics of GPT)**
+9. **Working with Text (basics of GPT)**
 
-9. **Transformers**
+10. **Transformers**
 
-10. **Building GPT-2**
+11. **Building GPT-2**
