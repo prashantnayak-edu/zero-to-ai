@@ -28,8 +28,8 @@ The material here is sourced from:
 3. **Introduction to Neural Networks**
    - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
    - [Types of Neural Networks](/notes/nn-types.ipynb)
-   - [MicroGrad: Neural Networks - Forward Pass & Backpropagation](/notes/nn-forward-backprop.ipynb)
-   - [MicroGrad: Neural Networks - Training](/notes/micrograd2.ipynb)
+   - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](/notes/nn-forward-backprop.ipynb)
+   - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
 
 4. **Dense Neural Networks**
 
