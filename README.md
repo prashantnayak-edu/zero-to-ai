@@ -18,18 +18,27 @@ The material here is sourced from:
 
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
    - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
+   - [Functions](/notes/functions.ipynb)
    - [Vectors](/notes/vector.ipynb)
+   - [Terminology and Notation](/notes/term-not.ipynb)
+
+2. **Machine Learning**
+   - [What is Machine Learning and types](/notes/what-is-ml.ipynb)
+   - [Why and how does an algorithm "learn"](/notes/why-algo-learns.ipynb)
+   - [Fundamental Algorithm - Linear Regression](/notes/linear-reg.ipynb)
+   - [Fundamental Algorithm - Logistic Regression](/notes/logistic-reg.ipynb)
 
 3. **Learning from data**
    - [Learning from data](/notes/learning-from-data.ipynb)
    - [Gradient Descent](/notes/gradient-descent.ipynb)
    - [Stochastic Gradient Descent](/notes/sgd.ipynb)
 
-3. **Introduction to Neural Networks**
+3. **Neural Networks**
    - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
    - [Types of Neural Networks](/notes/nn-types.ipynb)
    - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](/notes/nn-forward-backprop.ipynb)
    - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
+   - [Neural Networks Part 3 - PyTorch](/notes/nn-pytorch.ipynb)
 
 4. **Dense Neural Networks**
 
