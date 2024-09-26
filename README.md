@@ -17,8 +17,8 @@ The material here is sourced from:
 ## Course Outline
 
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
+   - [Data Structures - Scalars, Vectors, Matrices](/notes/data-structs.ipynb)
    - [Functions, Derivatives and Gradients](/notes/func-der-grad.ipynb)
-   - [Vectors](/notes/vector.ipynb)
    - [Terminology and Notation](/notes/term-not.ipynb)
    - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
    
