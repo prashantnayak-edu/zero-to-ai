@@ -17,10 +17,11 @@ The material here is sourced from:
 ## Course Outline
 
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
-   - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
-   - [Functions](/notes/functions.ipynb)
+   - [Functions, Derivatives and Gradients](/notes/func-der-grad.ipynb)
    - [Vectors](/notes/vector.ipynb)
    - [Terminology and Notation](/notes/term-not.ipynb)
+   - [Derivative of a single variable](/notes/derivative-single-var.ipynb)
+   
 
 2. **Machine Learning**
    - [What is Machine Learning and types](/notes/what-is-ml.ipynb)
