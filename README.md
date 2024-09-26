@@ -21,7 +21,7 @@ The material here is sourced from:
    - [Data Structures - Scalars, Vectors, Matrices](/notes/data-structs.ipynb)
    - [Introduction to Functions, Derivatives and Gradients](/notes/func-der-grad.ipynb)
    - [Derivative of function of a single variable](/notes/derivative-single-var.ipynb)
-   
+   - [Derivative of function of a multiple variables](/notes/derivative-multiple-var.ipynb)
 
 2. **Machine Learning**
    - [What is Machine Learning and types](/notes/what-is-ml.ipynb)
