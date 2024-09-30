@@ -52,6 +52,7 @@ The material here is sourced from:
 8. **Vector Embeddings**
 
 9. **Working with Text (basics of GPT)**
+   - [Language Modeling](/notes/language-modeling.ipynb)
 
 10. **Transformers**
 
