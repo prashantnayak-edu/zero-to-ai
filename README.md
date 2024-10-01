@@ -52,7 +52,7 @@ The material here is sourced from:
 8. **Vector Embeddings**
 
 9. **Working with Text (basics of GPT)**
-   - [Language Modeling Introduction](/notes/language-modeling.ipynb)
+   - [Language Modeling Introduction](/notes/lm-intro.ipynb)
    - [Bigram Language Model](/notes/bigram-lm.ipynb)
 
 10. **Transformers**
