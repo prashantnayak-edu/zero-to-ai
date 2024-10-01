@@ -41,23 +41,22 @@ The material here is sourced from:
    - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
    - [Neural Networks Part 3 - PyTorch](/notes/nn-pytorch.ipynb)
 
-4. **Dense Neural Networks**
+4. **Optimization and Regularization**
+   - [Softmax and Cross-Entropy](/notes/softmax-cross-entropy.ipynb)
+   - [Regularization](/notes/regularization.ipynb)
 
-5. **Classification with Neural Networks**
+5. **Vector Embeddings**
+   - [GPT style tokenization](/notes/gpt-tokenization.ipynb)
+   - [Vector Embeddings](/notes/vector-embeddings.ipynb)
 
-6. **Recurrent Neural Networks**
-
-7. **Optimization and Regularization**
-
-8. **Vector Embeddings**
-
-9. **Working with Text (basics of GPT)**
+6. **Working with Text (basics of GPT)**
    - [Language Modeling Introduction](/notes/lm-intro.ipynb)
    - [Simple Bigram model](/notes/bigram-lm.ipynb)
    - [Single linear layer of neural network Bigram Model](/notes/bigram-nn-lm.ipynb)
    - [Language Model using MLP (multi-layer perceptron)](/notes/bigram-mlp-lm.ipynb)
-   - [Transformer Language Model](/notes/bigram-transformer-lm.ipynb)
+   - [Building GPT-2 - Transformer Language Model](/notes/bigram-transformer-lm.ipynb)
 
-10. **Transformers**
-
-11. **Building GPT-2**
+7. **More neural network types**
+   - [Convolutional Neural Networks](/notes/conv-nn.ipynb)
+   - [Recurrent Neural Networks](/notes/rnn.ipynb)
+   - [Classification with Neural Networks](/notes/nn-classification.ipynb)
