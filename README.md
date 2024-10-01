@@ -53,7 +53,10 @@ The material here is sourced from:
 
 9. **Working with Text (basics of GPT)**
    - [Language Modeling Introduction](/notes/lm-intro.ipynb)
-   - [Bigram Language Model](/notes/bigram-lm.ipynb)
+   - [Simple Bigram model](/notes/bigram-lm.ipynb)
+   - [Single linear layer of neural network Bigram Model](/notes/bigram-nn-lm.ipynb)
+   - [Language Model using MLP (multi-layer perceptron)](/notes/bigram-mlp-lm.ipynb)
+   - [Transformer Language Model](/notes/bigram-transformer-lm.ipynb)
 
 10. **Transformers**
 
