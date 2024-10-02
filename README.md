@@ -35,6 +35,7 @@ The material here is sourced from:
 
 3. **Learning from data**
    - [Learning from data](/notes/learning-from-data.ipynb)
+   - [K-Nearest Neighbors](/notes/knn.ipynb)
    - [Gradient Descent](/notes/gradient-descent.ipynb)
    - [Stochastic Gradient Descent](/notes/sgd.ipynb)
 
