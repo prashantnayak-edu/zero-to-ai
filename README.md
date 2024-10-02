@@ -1,10 +1,14 @@
 # Zero to AI
 
-The lessons in this course are around Neural Networks and the Transformer architecture that is at the root of the current AI revolution.
+This course provides a comprehensive journey through the foundations of modern AI, covering topics from basic math and machine learning to advanced neural networks and reinforcement learning. It's designed to connect the dots in a way that many traditional AI courses don't.
 
-I put this course together to both learn about and potentially educate others that are on the journey to understand the current state of AI.
+While the course covers a wide range of topics, special emphasis is placed on Neural Networks and the Transformer architecture, which are at the heart of the current AI revolution. These technologies are driving the most significant breakthroughs in AI today.
 
-My goal was to try and explain it to myself in a way that a motivated High School student could follow along.
+I initially created this course to explain AI to my undergraduate daughter studying Math. As I developed it, I realized its potential to reach even younger students, like my soon-to-be 11th grade daughter. My goal evolved into crafting explanations that a motivated and intelligent high school student could grasp.
+
+The importance of this material can't be overstated. AI is shaping up to be the most significant technological shift since the World Wide Web emerged in the 1990s - potentially 100 times more impactful. Understanding these concepts is becoming crucial for anyone looking to navigate our rapidly changing world.
+
+This course aims to demystify AI, breaking down complex ideas into digestible pieces. Whether you're a student, a professional, or simply curious about AI, I hope this material will help you understand the technology that's reshaping our future.
 
 ## Sources
 
@@ -66,3 +70,12 @@ The material here is sourced from:
    - [Convolutional Neural Networks](/notes/conv-nn.ipynb)
    - [Recurrent Neural Networks](/notes/rnn.ipynb)
    - [Classification with Neural Networks](/notes/nn-classification.ipynb)
+
+9. **Introduction to Reinforcement Learning**
+   - [Introduction to Reinforcement Learning](/notes/rl-intro.ipynb)
+   - [Markov Decision Processes](/notes/mdp.ipynb)
+   - [Reinforcement Learning - Q-learning](/notes/q-learning.ipynb)
+   - [Reinforcement Learning - Policy Gradients](/notes/policy-gradients.ipynb)
+   - [Reinforcement Learning - Actor-Critic](/notes/actor-critic.ipynb)
+   - [Reinforcement Learning - Deep Reinforcement Learning](/notes/deep-rl.ipynb)
+
