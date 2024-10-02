@@ -41,7 +41,7 @@ The material here is sourced from:
    - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
    - [Neural Networks Part 3 - PyTorch](/notes/nn-pytorch.ipynb)
 
-4. ** Feature Engineering**
+4. **Feature Engineering**
    - [Introduction to Feature Engineering](/notes/feature-engineering.ipynb)
    - [One-hot encoding](/notes/one-hot-encoding.ipynb)
    - [Normalization and Standardization](/notes/normalization-standardization.ipynb)
