@@ -20,6 +20,8 @@ The material here is sourced from:
 
 ## Course Outline
 
+### Part 1 - Foundations
+
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
    - [Terminology and Notation](/notes/term-not.ipynb)
    - [Data Structures - Scalars, Vectors, Matrices](/notes/data-structs.ipynb)
@@ -45,6 +47,8 @@ The material here is sourced from:
    - [Normalization and Standardization](/notes/normalization-standardization.ipynb)
    - [Dealing with missing features and Data Imputation Techniques](/notes/missing-values-imputation.ipynb)
 
+### Part 2 - Neural Networks, Language Models and Transformers
+
 5. **Neural Networks**
    - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
    - [Types of Neural Networks](/notes/nn-types.ipynb)
@@ -66,6 +70,8 @@ The material here is sourced from:
    - [Single linear layer of neural network Bigram Model](/notes/bigram-nn-lm.ipynb)
    - [Language Model using MLP (multi-layer perceptron)](/notes/bigram-mlp-lm.ipynb)
    - [Building GPT-2 - Transformer Language Model](/notes/bigram-transformer-lm.ipynb)
+
+### Part 3 - Advanced Topics
 
 9. **More neural network types**
    - [Convolutional Neural Networks](/notes/conv-nn.ipynb)
