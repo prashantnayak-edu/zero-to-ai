@@ -2,6 +2,7 @@ import os
 import subprocess
 import shutil
 import json
+import re
 
 def convert_notebooks_to_markdown():
     # Create book/notes directory if it doesn't exist
@@ -52,8 +53,16 @@ def create_empty_markdown(output_path, filename):
 def copy_readme():
     # Copy the original README.md to book/index.md
     try:
-        shutil.copy('README.md', 'book/index.md')
-        print("Copied README.md to book/index.md")
+        with open('README.md', 'r', encoding='utf-8') as readme_file:
+            content = readme_file.read()
+        
+        # Replace .ipynb extensions with .md
+        modified_content = re.sub(r'(\w+)\.ipynb', r'\1.md', content)
+        
+        with open('book/index.md', 'w', encoding='utf-8') as index_file:
+            index_file.write(modified_content)
+        
+        print("Copied and modified README.md to book/index.md")
     except FileNotFoundError:
         print("README.md not found. Skipping index creation.")
 

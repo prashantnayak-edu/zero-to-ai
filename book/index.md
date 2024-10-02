@@ -23,66 +23,66 @@ The material here is sourced from:
 ### Part 1 - Foundations
 
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
-   - [Terminology and Notation](./notes/term-not.ipynb)
-   - [Data Structures - Scalars, Vectors, Matrices](./notes/data-structs.ipynb)
-   - [Introduction to Functions, Derivatives and Gradients](./notes/func-der-grad.ipynb)
-   - [Derivative of a function of a single variable](./notes/derivative-single-var.ipynb)
-   - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.ipynb)
+   - [Terminology and Notation](./notes/term-not.md)
+   - [Data Structures - Scalars, Vectors, Matrices](./notes/data-structs.md)
+   - [Introduction to Functions, Derivatives and Gradients](./notes/func-der-grad.md)
+   - [Derivative of a function of a single variable](./notes/derivative-single-var.md)
+   - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.md)
 
 2. **Machine Learning**
-   - [What is Machine Learning and types](./notes/what-is-ml.ipynb)
-   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.ipynb)
-   - [Fundamental Algorithm - Linear Regression](./notes/linear-reg.ipynb)
-   - [Fundamental Algorithm - Logistic Regression](./notes/logistic-reg.ipynb)
+   - [What is Machine Learning and types](./notes/what-is-ml.md)
+   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.md)
+   - [Fundamental Algorithm - Linear Regression](./notes/linear-reg.md)
+   - [Fundamental Algorithm - Logistic Regression](./notes/logistic-reg.md)
 
 3. **Learning from data**
-   - [Learning from data](./notes/learning-from-data.ipynb)
-   - [K-Nearest Neighbors](./notes/knn.ipynb)
-   - [Gradient Descent](./notes/gradient-descent.ipynb)
-   - [Stochastic Gradient Descent](./notes/sgd.ipynb)
+   - [Learning from data](./notes/learning-from-data.md)
+   - [K-Nearest Neighbors](./notes/knn.md)
+   - [Gradient Descent](./notes/gradient-descent.md)
+   - [Stochastic Gradient Descent](./notes/sgd.md)
 
 4. **Feature Engineering**
-   - [Introduction to Feature Engineering](./notes/feature-engineering.ipynb)
-   - [One-hot encoding](./notes/one-hot-encoding.ipynb)
-   - [Normalization and Standardization](./notes/normalization-standardization.ipynb)
-   - [Dealing with missing features and Data Imputation Techniques](./notes/missing-values-imputation.ipynb)
+   - [Introduction to Feature Engineering](./notes/feature-engineering.md)
+   - [One-hot encoding](./notes/one-hot-encoding.md)
+   - [Normalization and Standardization](./notes/normalization-standardization.md)
+   - [Dealing with missing features and Data Imputation Techniques](./notes/missing-values-imputation.md)
 
 ### Part 2 - Neural Networks, Language Models and Transformers
 
 5. **Neural Networks**
-   - [Introduction to Neural Networks](./notes/nn-intro.ipynb)
-   - [Types of Neural Networks](./notes/nn-types.ipynb)
-   - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](./notes/nn-forward-backprop.ipynb)
-   - [Neural Networks Part 2 - Training (MicroGrad)](./notes/nn-training.ipynb)
-   - [Neural Networks Part 3 - PyTorch](./notes/nn-pytorch.ipynb)
+   - [Introduction to Neural Networks](./notes/nn-intro.md)
+   - [Types of Neural Networks](./notes/nn-types.md)
+   - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](./notes/nn-forward-backprop.md)
+   - [Neural Networks Part 2 - Training (MicroGrad)](./notes/nn-training.md)
+   - [Neural Networks Part 3 - PyTorch](./notes/nn-pytorch.md)
 
 6. **Optimization and Regularization**
-   - [Softmax and Cross-Entropy](./notes/softmax-cross-entropy.ipynb)
-   - [Regularization](./notes/regularization.ipynb)
+   - [Softmax and Cross-Entropy](./notes/softmax-cross-entropy.md)
+   - [Regularization](./notes/regularization.md)
 
 7. **Vector Embeddings**
-   - [GPT style tokenization](./notes/gpt-tokenization.ipynb)
-   - [Vector Embeddings](./notes/vector-embeddings.ipynb)
+   - [GPT style tokenization](./notes/gpt-tokenization.md)
+   - [Vector Embeddings](./notes/vector-embeddings.md)
 
 8. **Working with Text (basics of GPT)**
-   - [Language Modeling Introduction](./notes/lm-intro.ipynb)
-   - [Simple Bigram model](./notes/bigram-lm.ipynb)
-   - [Single linear layer of neural network Bigram Model](./notes/bigram-nn-lm.ipynb)
-   - [Language Model using MLP (multi-layer perceptron)](./notes/bigram-mlp-lm.ipynb)
-   - [Building GPT-2 - Transformer Language Model](./notes/bigram-transformer-lm.ipynb)
+   - [Language Modeling Introduction](./notes/lm-intro.md)
+   - [Simple Bigram model](./notes/bigram-lm.md)
+   - [Single linear layer of neural network Bigram Model](./notes/bigram-nn-lm.md)
+   - [Language Model using MLP (multi-layer perceptron)](./notes/bigram-mlp-lm.md)
+   - [Building GPT-2 - Transformer Language Model](./notes/bigram-transformer-lm.md)
 
 ### Part 3 - Advanced Topics
 
 9. **More neural network types**
-   - [Convolutional Neural Networks](./notes/conv-nn.ipynb)
-   - [Recurrent Neural Networks](./notes/rnn.ipynb)
-   - [Classification with Neural Networks](./notes/nn-classification.ipynb)
+   - [Convolutional Neural Networks](./notes/conv-nn.md)
+   - [Recurrent Neural Networks](./notes/rnn.md)
+   - [Classification with Neural Networks](./notes/nn-classification.md)
 
 10. **Introduction to Reinforcement Learning**
-    - [Introduction to Reinforcement Learning](./notes/rl-intro.ipynb)
-    - [Markov Decision Processes](./notes/mdp.ipynb)
-    - [Reinforcement Learning - Q-learning](./notes/q-learning.ipynb)
-    - [Reinforcement Learning - Policy Gradients](./notes/policy-gradients.ipynb)
-    - [Reinforcement Learning - Actor-Critic](./notes/actor-critic.ipynb)
-    - [Reinforcement Learning - Deep Reinforcement Learning](./notes/deep-rl.ipynb)
+    - [Introduction to Reinforcement Learning](./notes/rl-intro.md)
+    - [Markov Decision Processes](./notes/mdp.md)
+    - [Reinforcement Learning - Q-learning](./notes/q-learning.md)
+    - [Reinforcement Learning - Policy Gradients](./notes/policy-gradients.md)
+    - [Reinforcement Learning - Actor-Critic](./notes/actor-critic.md)
+    - [Reinforcement Learning - Deep Reinforcement Learning](./notes/deep-rl.md)
 
