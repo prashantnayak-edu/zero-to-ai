@@ -12,8 +12,6 @@ The importance of this material can't be overstated. AI is shaping up to be the 
 
 This course aims to demystify AI, breaking down complex ideas into digestible pieces. Whether you're a student, a professional, or simply curious about AI, I hope this material will help you understand the technology that's reshaping our future.
 
-Prashant Nayak
-
 ### Sources
 
 We stand on the shoulders of giants in creating this course, drawing inspiration and knowledge from the brilliant work of the following educators and researchers in the field of AI and machine learning whose (open source) material I have used and is sourced from:
