@@ -9,6 +9,8 @@ MathJax.Hub.Config({
 });
 </script>
 # Zero to AI
+##### *- Prashant Nayak*
+---
 
 This course provides a comprehensive journey through the foundations of modern AI, covering topics from basic math and machine learning to advanced neural networks and reinforcement learning. It's designed to connect the dots in a way that many traditional AI courses don't.
 
@@ -20,9 +22,11 @@ The importance of this material can't be overstated. AI is shaping up to be the 
 
 This course aims to demystify AI, breaking down complex ideas into digestible pieces. Whether you're a student, a professional, or simply curious about AI, I hope this material will help you understand the technology that's reshaping our future.
 
-## Sources
+Prashant Nayak
 
-The material here is sourced from:
+### Sources
+
+We stand on the shoulders of giants in creating this course, drawing inspiration and knowledge from the brilliant work of the following educators and researchers in the field of AI and machine learning whose (open source) material I have used and is sourced from:
 - [Andrej Karpathy - NN-Zero-To-Hero](https://github.com/karpathy/nn-zero-to-hero)
 - [Vik Parchuri - Zero_To_GPT](https://github.com/VikParuchuri/zero_to_gpt/tree/master?tab=readme-ov-file)
 - [Tivadar Danka - Mathematics of Machine Learning](https://tivadardanka.com/mathematics-of-machine-learning-preview)
