@@ -79,10 +79,10 @@ The material here is sourced from:
    - [Classification with Neural Networks](/notes/nn-classification.ipynb)
 
 10. **Introduction to Reinforcement Learning**
-   - [Introduction to Reinforcement Learning](/notes/rl-intro.ipynb)
-   - [Markov Decision Processes](/notes/mdp.ipynb)
-   - [Reinforcement Learning - Q-learning](/notes/q-learning.ipynb)
-   - [Reinforcement Learning - Policy Gradients](/notes/policy-gradients.ipynb)
-   - [Reinforcement Learning - Actor-Critic](/notes/actor-critic.ipynb)
-   - [Reinforcement Learning - Deep Reinforcement Learning](/notes/deep-rl.ipynb)
+    - [Introduction to Reinforcement Learning](/notes/rl-intro.ipynb)
+    - [Markov Decision Processes](/notes/mdp.ipynb)
+    - [Reinforcement Learning - Q-learning](/notes/q-learning.ipynb)
+    - [Reinforcement Learning - Policy Gradients](/notes/policy-gradients.ipynb)
+    - [Reinforcement Learning - Actor-Critic](/notes/actor-critic.ipynb)
+    - [Reinforcement Learning - Deep Reinforcement Learning](/notes/deep-rl.ipynb)
 
