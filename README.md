@@ -38,40 +38,40 @@ The material here is sourced from:
    - [Gradient Descent](/notes/gradient-descent.ipynb)
    - [Stochastic Gradient Descent](/notes/sgd.ipynb)
 
-3. **Neural Networks**
-   - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
-   - [Types of Neural Networks](/notes/nn-types.ipynb)
-   - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](/notes/nn-forward-backprop.ipynb)
-   - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
-   - [Neural Networks Part 3 - PyTorch](/notes/nn-pytorch.ipynb)
-
 4. **Feature Engineering**
    - [Introduction to Feature Engineering](/notes/feature-engineering.ipynb)
    - [One-hot encoding](/notes/one-hot-encoding.ipynb)
    - [Normalization and Standardization](/notes/normalization-standardization.ipynb)
    - [Dealing with missing features and Data Imputation Techniques](/notes/missing-values-imputation.ipynb)
 
-5. **Optimization and Regularization**
+5. **Neural Networks**
+   - [Introduction to Neural Networks](/notes/nn-intro.ipynb)
+   - [Types of Neural Networks](/notes/nn-types.ipynb)
+   - [Neural Networks Part 1 - Forward Pass & Backpropagation (MicroGrad)](/notes/nn-forward-backprop.ipynb)
+   - [Neural Networks Part 2 - Training (MicroGrad)](/notes/nn-training.ipynb)
+   - [Neural Networks Part 3 - PyTorch](/notes/nn-pytorch.ipynb)
+
+6. **Optimization and Regularization**
    - [Softmax and Cross-Entropy](/notes/softmax-cross-entropy.ipynb)
    - [Regularization](/notes/regularization.ipynb)
 
-6. **Vector Embeddings**
+7. **Vector Embeddings**
    - [GPT style tokenization](/notes/gpt-tokenization.ipynb)
    - [Vector Embeddings](/notes/vector-embeddings.ipynb)
 
-7. **Working with Text (basics of GPT)**
+8. **Working with Text (basics of GPT)**
    - [Language Modeling Introduction](/notes/lm-intro.ipynb)
    - [Simple Bigram model](/notes/bigram-lm.ipynb)
    - [Single linear layer of neural network Bigram Model](/notes/bigram-nn-lm.ipynb)
    - [Language Model using MLP (multi-layer perceptron)](/notes/bigram-mlp-lm.ipynb)
    - [Building GPT-2 - Transformer Language Model](/notes/bigram-transformer-lm.ipynb)
 
-8. **More neural network types**
+9. **More neural network types**
    - [Convolutional Neural Networks](/notes/conv-nn.ipynb)
    - [Recurrent Neural Networks](/notes/rnn.ipynb)
    - [Classification with Neural Networks](/notes/nn-classification.ipynb)
 
-9. **Introduction to Reinforcement Learning**
+10. **Introduction to Reinforcement Learning**
    - [Introduction to Reinforcement Learning](/notes/rl-intro.ipynb)
    - [Markov Decision Processes](/notes/mdp.ipynb)
    - [Reinforcement Learning - Q-learning](/notes/q-learning.ipynb)
