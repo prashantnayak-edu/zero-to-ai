@@ -1,4 +1,5 @@
 # Zero to AI
+##### *- Prashant Nayak*
 
 This course provides a comprehensive journey through the foundations of modern AI, covering topics from basic math and machine learning to advanced neural networks and reinforcement learning. It's designed to connect the dots in a way that many traditional AI courses don't.
 
