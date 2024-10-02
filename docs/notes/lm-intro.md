@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Language Modeling
 
 Language modeling is the task of predicting the next word in a sequence of words. It is a type of machine learning algorithm that is used to generate text.

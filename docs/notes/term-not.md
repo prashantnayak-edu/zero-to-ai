@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Lesson: Basic Notation in Mathematics
 
 In this lesson, we'll cover some basic mathematical notations that are frequently used, especially in the context of summation, products, and finding maximum or minimum values.

@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Derivative of a function with a single variable
 
 The goal is to get a good intuitive understanding of what a derviative is. Here we start with the derivative of a function of a single variable.

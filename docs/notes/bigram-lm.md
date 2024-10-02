@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Bigram Language Model
 
 Bigram model just models the most likely character to follow a given character. So, its two characters in a row - hence the name "bigram".

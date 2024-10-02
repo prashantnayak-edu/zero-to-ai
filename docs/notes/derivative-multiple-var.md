@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Derivative of a Function with Two Variables
 
 In this lesson, we will extend the concept of derivatives to functions with two variables. The derivative of a function with multiple variables is called a **partial derivative**. Instead of finding how a function changes with respect to just one variable, we now see how the function changes with respect to **each** variable individually, while keeping the others constant.

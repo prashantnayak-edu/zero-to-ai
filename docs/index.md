@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 # Zero to AI
 
 This course provides a comprehensive journey through the foundations of modern AI, covering topics from basic math and machine learning to advanced neural networks and reinforcement learning. It's designed to connect the dots in a way that many traditional AI courses don't.

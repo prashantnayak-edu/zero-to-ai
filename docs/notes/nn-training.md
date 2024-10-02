@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ##Neural Networks - Training
 
 In this lesson, we're going to do continue on from Part 1 [Neural Networks - Forward Pass and Backpropagation](/nn-forward-backprop.ipynb) move on to training the Neural Network.

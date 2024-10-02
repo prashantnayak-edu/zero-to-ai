@@ -33,6 +33,9 @@ def convert_notebooks_to_markdown():
                     
                     print(f"Converted {filename} to markdown")
                     
+                    # Add MathJax support to the converted markdown file
+                    add_mathjax_support(output_path)
+                    
                     # Log the output of the subprocess for debugging
                     print(f"Conversion output: {result.stdout}")
                     if result.stderr:
@@ -66,11 +69,35 @@ def copy_readme():
     except FileNotFoundError:
         print("README.md not found. Skipping index creation.")
 
+def add_mathjax_support(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    mathjax_script = """
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+    }
+});
+</script>
+"""
+    
+    modified_content = mathjax_script + content
+    
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(modified_content)
+
 if __name__ == "__main__":
     # Create docs directory if it doesn't exist
     os.makedirs('docs', exist_ok=True)
     
     convert_notebooks_to_markdown()
     copy_readme()
+    
+    # Add MathJax support to index.md as well
+    add_mathjax_support('docs/index.md')
     
     print("Docs build complete!")

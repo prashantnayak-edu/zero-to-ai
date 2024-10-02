@@ -1,3 +1,13 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+    }
+});
+</script>
 ## Introduction to Linear Algebra: Data Structures
 
 Linear algebra is an important branch of mathematics that deals with data structures like scalars, vectors, matrices, and sets. These are the building blocks for many operations in mathematics, physics, and even computer science. In this lesson, we will define each of these structures.
