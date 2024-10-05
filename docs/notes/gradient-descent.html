@@ -7516,7 +7516,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Gradient-Descent">Gradient Descent<a class="anchor-link" href="#Gradient-Descent">¶</a></h2><p>As we have learnt by now, in machine learning, we typically create models that predict or classify input values.</p>
+<h2 id="Gradient-Descent-and-Stochastic-Gradient-Descent">Gradient Descent and Stochastic Gradient Descent<a class="anchor-link" href="#Gradient-Descent-and-Stochastic-Gradient-Descent">¶</a></h2><p>In this lesson, we will learn about two types of gradient descent algorithms - Gradient Descent and Stochastic Gradient Descent.</p>
+<h3 id="Gradient-Descent">Gradient Descent<a class="anchor-link" href="#Gradient-Descent">¶</a></h3><p>As we have learnt by now, in machine learning, we typically create models that predict or classify input values.</p>
 <p>Furthermore, we now have an intution about a model - we know that it is like an equation or a function.</p>
 <p>$$
 y = 2x + 3
@@ -7558,7 +7559,7 @@ $$</p>
 </ul>
 <p>Just as the hiker aims to find the fastest way up the mountain, gradient descent in machine learning aims to find the minimum of a function (in this case, minimizing climbing time).</p>
 <p>This process is called <strong>gradient descent</strong>.</p>
-<h3 id="Gradient-Descent-in-code">Gradient Descent in code<a class="anchor-link" href="#Gradient-Descent-in-code">¶</a></h3>
+<h4 id="Gradient-Descent-in-code">Gradient Descent in code<a class="anchor-link" href="#Gradient-Descent-in-code">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7941,6 +7942,105 @@ Final function value:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>As we can see, the function value is converging to the minimum value of y = 0 (actually an array of zeroes) at $(x_1, x_2)$ being arrays with all values close to zero as well.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Stochastic-Gradient-Descent">Stochastic Gradient Descent<a class="anchor-link" href="#Stochastic-Gradient-Descent">¶</a></h3><p>Stochastic Gradient Descent is a variant of Gradient Descent that is used to optimize machine learning models. It is particularly useful when dealing with large datasets, as it processes data in small batches (or random samples) rather than the entire dataset at once. This makes it more efficient and scalable.</p>
+<p>The basic idea behind Stochastic Gradient Descent is to update the model parameters using a single data point at a time, instead of using the entire dataset. This is achieved by randomly selecting a small subset of the data (called a batch) and computing the gradient based on that subset. This process is repeated multiple times until the model parameters converge to a satisfactory state.</p>
+<p>Stochastic Gradient Descent is more efficient than Gradient Descent because it reduces the computational cost associated with calculating the gradient over the entire dataset. It also helps in avoiding overfitting, as it provides a more diverse set of gradients that can lead to better generalization.</p>
+<p>However, the randomness introduced by selecting different batches can cause the algorithm to oscillate around the minimum, preventing it from converging to the global minimum. To address this, techniques like learning rate decay and momentum can be used.</p>
+<p>Here is the new code for Stochastic Gradient Descent.  It reuses the code from the previous section.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># New function for stochastic gradient descent</span>
+<span class="k">def</span> <span class="nf">stochastic_gradient_descent</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x1_init</span><span class="p">,</span> <span class="n">x2_init</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+    <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="n">x1_init</span><span class="p">,</span> <span class="n">x2_init</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">):</span>
+        <span class="c1"># Randomly select a batch</span>
+        <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">x1_batch</span> <span class="o">=</span> <span class="n">x1</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+        <span class="n">x2_batch</span> <span class="o">=</span> <span class="n">x2</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+        
+        <span class="c1"># Calculate the gradient for the batch</span>
+        <span class="n">grad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">([</span><span class="n">partial_derivative</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x1_i</span><span class="p">,</span> <span class="n">x2_i</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span> <span class="k">for</span> <span class="n">x1_i</span><span class="p">,</span> <span class="n">x2_i</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x1_batch</span><span class="p">,</span> <span class="n">x2_batch</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        
+        <span class="c1"># Update x1 and x2</span>
+        <span class="n">x1</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">grad</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">x2</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">grad</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Stochastic Gradient Descent</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="n">x1_final_sgd</span><span class="p">,</span> <span class="n">x2_final_sgd</span> <span class="o">=</span> <span class="n">stochastic_gradient_descent</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Stochastic Gradient Descent Final values: </span><span class="se">\n\n</span><span class="s2"> x1 = </span><span class="si">{</span><span class="n">x1_final_sgd</span><span class="si">}</span><span class="s2">, </span><span class="se">\n\n</span><span class="s2"> x2 = </span><span class="si">{</span><span class="n">x2_final_sgd</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Stochastic Gradient Descent Final function value: </span><span class="se">\n</span><span class="si">{</span><span class="n">f</span><span class="p">(</span><span class="n">x1_final_sgd</span><span class="p">,</span><span class="w"> </span><span class="n">x2_final_sgd</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Stochastic Gradient Descent Final values: 
+
+ x1 = [-4.64097597 -4.11466018 -3.58834439 -3.0620286  -2.53571281 -2.00939702
+ -1.48308123 -0.95676544 -0.43044965  0.09586614  0.62218193  1.14849772
+  1.67481351  2.2011293   2.72744508  3.25376087  3.78007666  4.30639245
+  4.83270824  5.35902403], 
+
+ x2 = [-4.64097597 -4.11466018 -3.58834439 -3.0620286  -2.53571281 -2.00939702
+ -1.48308123 -0.95676544 -0.43044965  0.09586614  0.62218193  1.14849772
+  1.67481351  2.2011293   2.72744508  3.25376087  3.78007666  4.30639245
+  4.83270824  5.35902403] 
+
+Stochastic Gradient Descent Final function value: 
+[4.30773159e+01 3.38608568e+01 2.57524309e+01 1.87520383e+01
+ 1.28596789e+01 8.07535277e+00 4.39905987e+00 1.83080022e+00
+ 3.70573806e-01 1.83806327e-02 7.74220701e-01 2.63809401e+00
+ 5.61000056e+00 9.68994035e+00 1.48779134e+01 2.11739197e+01
+ 2.85779592e+01 3.70900319e+01 4.67101379e+01 5.74382772e+01]
+</pre>
+</div>
 </div>
 </div>
 </div>

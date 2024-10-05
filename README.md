@@ -39,8 +39,7 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.ipynb)
-   - [Gradient Descent](./notes/gradient-descent.ipynb)
-   - [Stochastic Gradient Descent](./notes/sgd.ipynb)
+   - [Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.ipynb)
    - [Linear Regression](./notes/linear-reg.ipynb)
    - [K-Nearest Neighbors](./notes/knn.ipynb)
 
