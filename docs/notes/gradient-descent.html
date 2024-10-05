@@ -7526,35 +7526,35 @@ $$</p>
 y = 2x_1 + 3x_2 + 4
 $$</p>
 <p>Remember from our lesson <a href="./func-der-grad.ipynb">Introduction to Functions, Derivatives and Gradients</a> that the <strong>gradient</strong> of a function with multiple inputs (or variables  ) is a vector that contains the partial derivatives of the function with respect to each of the input variables. So in other words, it tells us how the output of the function changes as <em>each</em> input changes.</p>
-<p>To use our hiking analogy again, when you are standing on hilly terrain, the gradient is like a compass that tells you the steepest direction and how steep it is at any point on this 3D terrain.</p>
-<p>When you look at this "compass" at any point $(x_1, x_2)$, the gradient is like an arrow pointing in the direction of the steepest ascent. So, in our case, the gradient is a vector that has two arrows in it, one for each direction $(x_1, x_2)$</p>
-<p>The intution now behind gradient descent is that we want move in the direction of the steepest descent (i.e. the opposite direction of the gradient) to find the minimum value of the function.</p>
+<p>To use our hiking analogy, when you are standing on hilly terrain, the gradient is like a compass that tells you the steepest direction and how steep it is at any point on this 3D terrain.</p>
+<p>When you look at this "compass" at any point $(x_1, x_2)$, the gradient is like an arrow pointing in the direction of the steepest ascent. In our hiking scenario:</p>
+<ul>
+<li>$x_1$ represents the east-west position on the terrain</li>
+<li>$x_2$ represents the north-south position on the terrain</li>
+<li>The height at any point $(x_1, x_2)$ represents the climbing time for that location</li>
+</ul>
+<p>The gradient is a vector that has two components, one for each direction (east-west and north-south).</p>
+<p>The intuition behind gradient descent is that we want to move in the direction of the steepest descent (i.e., the opposite direction of the gradient) to find the minimum value of the function, which in this case represents the shortest climbing time.</p>
 <p>For hikers, understanding the gradient helps in planning routes, estimating effort, and navigating safely.</p>
 <p>In mathematics and machine learning, gradients are crucial for optimization problems - finding the quickest path to the highest point (maximum) or lowest point (minimum) of a function.</p>
-<p>Let's imagine a hiker trying to minimize the time it takes to climb a mountain. In this scenario:</p>
-<ul>
-<li>$x_1$ represents the weight of the jacket the hiker chooses to wear</li>
-<li>$x_2$ represents the amount of water the hiker decides to carry</li>
-<li>$y$ represents the time it takes to reach the summit</li>
-</ul>
-<p>Our function $f(x_1, x_2)$ calculates the climbing time based on these two factors. Gradient descent helps us find the optimal combination of jacket weight and water amount that minimizes the climbing time.</p>
+<p>Let's imagine a hiker trying to minimize the time it takes to climb a mountain. Our function $f(x_1, x_2)$ calculates the climbing time based on the hiker's position on the terrain.</p>
 <p>To perform gradient descent in this hiking context:</p>
 <ol>
-<li>We start with initial guesses for jacket weight and water amount.</li>
-<li>We calculate the gradient of the function at our current position. This tells us how much the climbing time would change if we slightly adjusted the jacket weight or water amount.</li>
+<li>We start with an initial position on the terrain.</li>
+<li>We calculate the gradient of the function at our current position. This tells us the direction of the steepest ascent.</li>
 <li>We then move in the opposite direction of the gradient. This means:<ul>
-<li>If increasing jacket weight increases climbing time, we slightly decrease the jacket weight.</li>
-<li>If increasing water amount increases climbing time, we slightly decrease the water amount.</li>
+<li>If the steepest ascent is towards the east, we move slightly west.</li>
+<li>If the steepest ascent is towards the north, we move slightly south.</li>
 </ul>
 </li>
-<li>We repeat steps 2 and 3 until we find the combination that gives us the minimum climbing time.</li>
+<li>We repeat steps 2 and 3 until we find the position that gives us the minimum climbing time.</li>
 </ol>
-<p>This process is like a hiker experimenting with different gear setups:</p>
+<p>This process is like a hiker navigating the terrain:</p>
 <ul>
-<li>They start with a guess at what might work best.</li>
-<li>They assess how changes in jacket weight or water amount affect their climbing speed.</li>
-<li>They make small adjustments to their gear based on what they learn.</li>
-<li>They keep refining their choices until they find the optimal balance.</li>
+<li>They start at a random position.</li>
+<li>They look around to determine the steepest direction.</li>
+<li>They take a small step in the opposite direction of the steepest ascent.</li>
+<li>They keep repeating this process until they find the lowest point (shortest climbing time).</li>
 </ul>
 <p>Just as the hiker aims to find the fastest way up the mountain, gradient descent in machine learning aims to find the minimum of a function (in this case, minimizing climbing time).</p>
 <p>This process is called <strong>gradient descent</strong>.</p>
