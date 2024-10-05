@@ -39,6 +39,9 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
+   - [Fundamental Algorithms - Linear and Logistic Regression](./notes/fundamental-algorithms.html)
+       - also introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
+       - also introduces Gradient Descent with a single input
    - [Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.html)
    - [Linear Regression](./notes/linear-reg.html)
    - [K-Nearest Neighbors](./notes/knn.html)
