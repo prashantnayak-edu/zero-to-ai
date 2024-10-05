@@ -7531,9 +7531,32 @@ $$</p>
 <p>The intution now behind gradient descent is that we want move in the direction of the steepest descent (i.e. the opposite direction of the gradient) to find the minimum value of the function.</p>
 <p>For hikers, understanding the gradient helps in planning routes, estimating effort, and navigating safely.</p>
 <p>In mathematics and machine learning, gradients are crucial for optimization problems - finding the quickest path to the highest point (maximum) or lowest point (minimum) of a function.</p>
-<p>So assume we have a function represents the cost of fuel as a function of speed of the car and the size of the engine. In our case $x_1$ represents the speed of the car and $x_2$ represents the size of the engine and $y$ represents the cost of fuel.</p>
-<p>Gradient descent helps us find the speed and engine size that minimises the cost of fuel.</p>
-<p>To perform gradient descent, we start by calculating the gradient of the function at our current postion.  Then we move in the opposite direction of the gradient (i.e. the direction of the steepest descent) by a small amount.  We repeat this process until we reach the minimum value of the function (or the ideal speed and engine size for the car to minimise the cost of fuel).</p>
+<p>Let's imagine a hiker trying to minimize the time it takes to climb a mountain. In this scenario:</p>
+<ul>
+<li>$x_1$ represents the weight of the jacket the hiker chooses to wear</li>
+<li>$x_2$ represents the amount of water the hiker decides to carry</li>
+<li>$y$ represents the time it takes to reach the summit</li>
+</ul>
+<p>Our function $f(x_1, x_2)$ calculates the climbing time based on these two factors. Gradient descent helps us find the optimal combination of jacket weight and water amount that minimizes the climbing time.</p>
+<p>To perform gradient descent in this hiking context:</p>
+<ol>
+<li>We start with initial guesses for jacket weight and water amount.</li>
+<li>We calculate the gradient of the function at our current position. This tells us how much the climbing time would change if we slightly adjusted the jacket weight or water amount.</li>
+<li>We then move in the opposite direction of the gradient. This means:<ul>
+<li>If increasing jacket weight increases climbing time, we slightly decrease the jacket weight.</li>
+<li>If increasing water amount increases climbing time, we slightly decrease the water amount.</li>
+</ul>
+</li>
+<li>We repeat steps 2 and 3 until we find the combination that gives us the minimum climbing time.</li>
+</ol>
+<p>This process is like a hiker experimenting with different gear setups:</p>
+<ul>
+<li>They start with a guess at what might work best.</li>
+<li>They assess how changes in jacket weight or water amount affect their climbing speed.</li>
+<li>They make small adjustments to their gear based on what they learn.</li>
+<li>They keep refining their choices until they find the optimal balance.</li>
+</ul>
+<p>Just as the hiker aims to find the fastest way up the mountain, gradient descent in machine learning aims to find the minimum of a function (in this case, minimizing climbing time).</p>
 <p>This process is called <strong>gradient descent</strong>.</p>
 <h3 id="Gradient-Descent-in-code">Gradient Descent in code<a class="anchor-link" href="#Gradient-Descent-in-code">¶</a></h3>
 </div>
