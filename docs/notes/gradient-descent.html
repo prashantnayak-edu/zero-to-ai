@@ -7516,8 +7516,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Gradient-Descent-and-Stochastic-Gradient-Descent">Gradient Descent and Stochastic Gradient Descent<a class="anchor-link" href="#Gradient-Descent-and-Stochastic-Gradient-Descent">¶</a></h2><p>In this lesson, we will learn about two types of gradient descent algorithms - Gradient Descent and Stochastic Gradient Descent.</p>
-<h3 id="Gradient-Descent">Gradient Descent<a class="anchor-link" href="#Gradient-Descent">¶</a></h3><p>As we have learnt by now, in machine learning, we typically create models that predict or classify input values.</p>
+<h2 id="Gradient-Descent-and-Stochastic-Gradient-Descent">Gradient Descent and Stochastic Gradient Descent<a class="anchor-link" href="#Gradient-Descent-and-Stochastic-Gradient-Descent">¶</a></h2><p>In this lesson, we will learn about two types of fundamental techniques in machine learning - Gradient Descent and Stochastic Gradient Descent.</p>
+<p>As we have learnt by now, in machine learning, we typically create models that predict or classify input values.</p>
 <p>Furthermore, we now have an intution about a model - we know that it is like an equation or a function.</p>
 <p>$$
 y = 2x + 3
@@ -7526,7 +7526,7 @@ $$</p>
 <p>$$
 y = 2x_1 + 3x_2 + 4
 $$</p>
-<p>Remember from our lesson <a href="./func-der-grad.ipynb">Introduction to Functions, Derivatives and Gradients</a> that the <strong>gradient</strong> of a function with multiple inputs (or variables  ) is a vector that contains the partial derivatives of the function with respect to each of the input variables. So in other words, it tells us how the output of the function changes as <em>each</em> input changes.</p>
+<h3 id="Gradient-Descent">Gradient Descent<a class="anchor-link" href="#Gradient-Descent">¶</a></h3><p>Remember from our lesson <a href="./func-der-grad.ipynb">Introduction to Functions, Derivatives and Gradients</a> that the <strong>gradient</strong> of a function with multiple inputs (or variables  ) is a vector that contains the partial derivatives of the function with respect to each of the input variables. So in other words, it tells us how the output of the function changes as <em>each</em> input changes.</p>
 <p>To use our hiking analogy, when you are standing on hilly terrain, the gradient is like a compass that tells you the steepest direction and how steep it is at any point on this 3D terrain.</p>
 <p>When you look at this "compass" at any point $(x_1, x_2)$, the gradient is like an arrow pointing in the direction of the steepest ascent. In our hiking scenario:</p>
 <ul>
