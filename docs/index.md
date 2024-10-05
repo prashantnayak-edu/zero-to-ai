@@ -31,20 +31,18 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
    - [Derivative of a function of a single variable](./notes/derivative-single-var.html)
    - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.html)
 
-2. **Machine Learning**
+2. **Machine Learning Basics**
    - [What is Machine Learning and types](./notes/what-is-ml.html)
    - [Why and how does an algorithm "learn"](./notes/why-algo-learns.html)
-   - [Fundamental Algorithm - Linear Regression](./notes/linear-reg.html)
-   - [Fundamental Algorithm - Logistic Regression](./notes/logistic-reg.html)
+   - [Prediction and Classification](./notes/prediction-classification.html)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
-   - [Fundamental Algorithms - Linear and Logistic Regression](./notes/fundamental-algorithms.html)
+   - [Fundamental Algorithms for prediction - Linear and Logistic Regression](./notes/fundamental-algorithms.html)
        - also introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
        - also introduces Gradient Descent with a single input
-   - [Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.html)
-   - [Linear Regression](./notes/linear-reg.html)
-   - [K-Nearest Neighbors](./notes/knn.html)
+   - [Optimization Algorithms - Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.html)
+   - [Fundamental Algorithm for classificaiton - K-Nearest Neighbors](./notes/knn.html)
 
 4. **Feature Engineering**
    - [Introduction to Feature Engineering](./notes/feature-engineering.html)
