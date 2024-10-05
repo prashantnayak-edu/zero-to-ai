@@ -31,15 +31,14 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
    - [Derivative of a function of a single variable](./notes/derivative-single-var.ipynb)
    - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.ipynb)
 
-2. **Machine Learning**
+2. **Machine Learning Basics**
    - [What is Machine Learning and types](./notes/what-is-ml.ipynb)
    - [Why and how does an algorithm "learn"](./notes/why-algo-learns.ipynb)
-   - [Fundamental Algorithm - Linear Regression](./notes/linear-reg.ipynb)
-   - [Fundamental Algorithm - Logistic Regression](./notes/logistic-reg.ipynb)
+   - [Prediction and Classification](./notes/prediction-classification.ipynb)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.ipynb)
-   - [Fundamental Algorithms - Linear and Logistic Regression](./notes/fundamental-algorithms.ipynb)
+   - [Fundamental Algorithms for prediction - Linear and Logistic Regression](./notes/fundamental-algorithms.ipynb)
        - also introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
        - also introduces Gradient Descent with a single input
    - [Optimization Algorithms - Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.ipynb)
