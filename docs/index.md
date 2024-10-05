@@ -39,9 +39,10 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
-   - [K-Nearest Neighbors](./notes/knn.html)
    - [Gradient Descent](./notes/gradient-descent.html)
    - [Stochastic Gradient Descent](./notes/sgd.html)
+   - [Linear Regression](./notes/linear-reg.html)
+   - [K-Nearest Neighbors](./notes/knn.html)
 
 4. **Feature Engineering**
    - [Introduction to Feature Engineering](./notes/feature-engineering.html)
