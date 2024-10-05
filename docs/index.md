@@ -33,8 +33,8 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 2. **Machine Learning Basics**
    - [What is Machine Learning and types](./notes/what-is-ml.html)
-   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.html)
    - [Prediction and Classification](./notes/prediction-classification.html)
+   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.html)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
