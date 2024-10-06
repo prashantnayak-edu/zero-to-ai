@@ -45,8 +45,8 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
    - [Optimization Algorithms - Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.html)
    - [Fundamental Algorithm for Classification - K-Nearest Neighbors](./notes/knn.html)
 
-4. **Feature Engineering**
-   - [Introduction to Feature Engineering](./notes/feature-engineering.html)
+4. **Introduction to Feature Engineering**
+   - [What is Feature Engineering](./notes/feature-engineering.html)
    - [One-hot encoding](./notes/one-hot-encoding.html)
    - [Normalization and Standardization](./notes/normalization-standardization.html)
    - [Dealing with missing features and Data Imputation Techniques](./notes/missing-values-imputation.html)
