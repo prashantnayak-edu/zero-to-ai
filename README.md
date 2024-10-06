@@ -27,14 +27,14 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
    - [Terminology and Notation](./notes/term-not.ipynb)
    - [Data Structures - Scalars, Vectors, Matrices](./notes/data-structs.ipynb)
-   - [Introduction to Functions, Derivatives and Gradients](./notes/func-der-grad.ipynb)
+   - [Functions, Derivatives and Gradients](./notes/func-der-grad.ipynb)
    - [Derivative of a function of a single variable](./notes/derivative-single-var.ipynb)
    - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.ipynb)
 
 2. **Machine Learning Basics**
-   - [What is Machine Learning and types](./notes/what-is-ml.ipynb)
+   - [What is Machine Learning](./notes/what-is-ml.ipynb)
    - [Prediction and Classification](./notes/prediction-classification.ipynb)
-   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.ipynb)
+   - [Why and how does an algorithm "learn"?](./notes/why-algo-learns.ipynb)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.ipynb)

@@ -27,14 +27,14 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
    - [Terminology and Notation](./notes/term-not.html)
    - [Data Structures - Scalars, Vectors, Matrices](./notes/data-structs.html)
-   - [Introduction to Functions, Derivatives and Gradients](./notes/func-der-grad.html)
+   - [Functions, Derivatives and Gradients](./notes/func-der-grad.html)
    - [Derivative of a function of a single variable](./notes/derivative-single-var.html)
    - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.html)
 
 2. **Machine Learning Basics**
-   - [What is Machine Learning and types](./notes/what-is-ml.html)
+   - [What is Machine Learning](./notes/what-is-ml.html)
    - [Prediction and Classification](./notes/prediction-classification.html)
-   - [Why and how does an algorithm "learn"](./notes/why-algo-learns.html)
+   - [Why and how does an algorithm "learn"?](./notes/why-algo-learns.html)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
