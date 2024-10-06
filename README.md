@@ -24,17 +24,18 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 ### Part 1 - Foundations
 
-1. **Math Fundamentals**: Lessons on basics of linear algebra and calculus
+1. **Math Fundamentals for Machine Learning and AI**
    - [Terminology and Notation](./notes/term-not.ipynb)
    - [Data Structures - Scalars, Vectors, Matrices](./notes/data-structs.ipynb)
    - [Functions, Derivatives and Gradients](./notes/func-der-grad.ipynb)
    - [Derivative of a function of a single variable](./notes/derivative-single-var.ipynb)
    - [Derivative of a function of multiple variables](./notes/derivative-multiple-var.ipynb)
 
-2. **Machine Learning Basics**
+2. **Introduction to Machine Learning**
    - [What is Machine Learning](./notes/what-is-ml.ipynb)
    - [Prediction and Classification](./notes/prediction-classification.ipynb)
    - [Why and how does an algorithm "learn"?](./notes/why-algo-learns.ipynb)
+   - [Difference between Machine Learning and AI](./notes/ml-ai.ipynb)
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.ipynb)
