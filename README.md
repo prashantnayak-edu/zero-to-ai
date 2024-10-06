@@ -39,8 +39,8 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.ipynb)
    - [Fundamental Algorithms for prediction - Linear and Logistic Regression](./notes/fundamental-algorithms.ipynb)
-       - also introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
-       - also introduces Gradient Descent with a single input
+       - introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
+       - introduces Optimization algorithms like Gradient Descent with a single input
    - [Optimization Algorithms - Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.ipynb)
    - [Fundamental Algorithm for classificaiton - K-Nearest Neighbors](./notes/knn.ipynb)
 
