@@ -39,11 +39,11 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 3. **Learning from data**
    - [Learning from data](./notes/learning-from-data.html)
-   - [Fundamental Algorithms for prediction - Linear and Logistic Regression](./notes/fundamental-algorithms.html)
+   - [Fundamental Algorithms for Prediction - Linear and Logistic Regression](./notes/fundamental-algorithms.html)
        - introduces Loss functions like Mean Squared Error (MSE) and Cross Entropy Loss
        - introduces Optimization algorithms like Gradient Descent with a single input
    - [Optimization Algorithms - Gradient Descent and Stochastic Gradient Descent](./notes/gradient-descent.html)
-   - [Fundamental Algorithm for classificaiton - K-Nearest Neighbors](./notes/knn.html)
+   - [Fundamental Algorithm for Classification - K-Nearest Neighbors](./notes/knn.html)
 
 4. **Feature Engineering**
    - [Introduction to Feature Engineering](./notes/feature-engineering.html)
