@@ -89,3 +89,7 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
     - [Reinforcement Learning - Actor-Critic](./notes/actor-critic.ipynb)
     - [Reinforcement Learning - Deep Reinforcement Learning](./notes/deep-rl.ipynb)
 
+### Part 4 - Additional ML and Data Science Topics
+    - [75 terms every data scientist should know](./notes/75-terms-ds.ipynb)
+
+
