@@ -16,9 +16,10 @@ This course aims to demystify AI, breaking down complex ideas into digestible pi
 
 We stand on the shoulders of giants in creating this course, drawing inspiration and knowledge from the brilliant work of the following educators and researchers in the field of AI and machine learning whose (open source) material I have used and is sourced from:
 - [Andrej Karpathy - NN-Zero-To-Hero](https://github.com/karpathy/nn-zero-to-hero)
+- [Andriy Burkov - The Hundred-Page Machine Learning Book](http://themlbook.com)
+- [CS-231 Stanford University](https://cs231n.github.io/)
 - [Vik Parchuri - Zero_To_GPT](https://github.com/VikParuchuri/zero_to_gpt/tree/master?tab=readme-ov-file)
 - [Tivadar Danka - Mathematics of Machine Learning](https://tivadardanka.com/mathematics-of-machine-learning-preview)
-- [CS-231 Stanford University](https://cs231n.github.io/)
 
 ## Course Outline
 
