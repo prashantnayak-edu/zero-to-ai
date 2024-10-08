@@ -7525,11 +7525,11 @@ a.anchor-link {
 <li>w  is the weight (or slope),</li>
 <li>b  is the bias (or intercept).</li>
 </ul>
-<p>_Note: This equation should be familiar to you from the equation</p>
+<p>Note: This equation should be familiar to you from the equation</p>
 <p>$$
 y = mx + c
 $$</p>
-<p>that you have learned in your basic algebra class._</p>
+<p>that you have learned in your basic algebra class.</p>
 <h3 id="Step-1:-Understanding-Supervised-Learning">Step 1: Understanding Supervised Learning<a class="anchor-link" href="#Step-1:-Understanding-Supervised-Learning">¶</a></h3><p>Supervised learning works by using labeled data. Labeled data means that for every input (in this case, square footage), we know the correct output (in this case, the house price). The algorithm learns by looking at these labeled examples and trying to find the relationship between the input and output.</p>
 <p>Let’s create a simple dataset of house square footage and prices, and plot it using matplotlib.</p>
 </div>
@@ -7549,6 +7549,9 @@ $$</p>
 <span class="c1"># Example dataset of house square footage and prices</span>
 <span class="n">square_footage</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1500</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2500</span><span class="p">,</span> <span class="mi">3000</span><span class="p">])</span>
 <span class="n">prices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">150000</span><span class="p">,</span> <span class="mi">200000</span><span class="p">,</span> <span class="mi">250000</span><span class="p">,</span> <span class="mi">300000</span><span class="p">,</span> <span class="mi">350000</span><span class="p">])</span>
+<span class="c1"># If the square footage is 1000, the price is 150000</span>
+<span class="c1"># If the square footage is 1500, the price is 200000</span>
+<span class="c1"># and so on...</span>
 
 <span class="c1"># Plotting the data points</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">square_footage</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">)</span>
@@ -7586,7 +7589,9 @@ $$</p>
 $$ y = wx + b $$
 Where  w  is the slope (how much price increases with square footage) and  b  is the intercept (the price when square footage is zero).</p>
 <p>Fitting the Line (Finding  w  and  b )</p>
-<p>The algorithm adjusts  w  and  b  to minimize the difference between the predicted price (on the line) and the actual price (the dots). This process is called fitting. Let’s assume we’ve used some optimization method (like Gradient Descent) to find the values of  w  and  b , and then plot the line.</p>
+<p>The algorithm adjusts  w  and  b  to minimize the difference between the predicted price (on the line) and the actual price (the dots). This process is called fitting.</p>
+<p>We will not go into the details here of how the algorithm finds the best values of  w  and  b.  This is discussed in detail in other lessons.</p>
+<p>Let’s assume we’ve used some optimization method (like Gradient Descent) to find the values of  w  and  b , and then plot the line.</p>
 </div>
 </div>
 </div>
@@ -7639,8 +7644,10 @@ Where  w  is the slope (how much price increases with square footage) and  b  is
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Explanation:">Explanation:<a class="anchor-link" href="#Explanation:">¶</a></h3><p>The red line represents the fitted model, which tries to minimize the difference between the predicted prices (on the line) and the actual prices (the blue dots).</p>
 <p>The algorithm adjusts the line until it’s as close as possible to all of the data points.</p>
+<p>Notice that our line does not go <em>exactly</em> through all the data points.  Different algorithms, optimization and loss functions will fit the data points differently.  But the goal is to get as close as possible to all the data points.</p>
 <h3 id="Step-2:-Why-Does-the-Algorithm-Work-on-New-Data?">Step 2: Why Does the Algorithm Work on New Data?<a class="anchor-link" href="#Step-2:-Why-Does-the-Algorithm-Work-on-New-Data?">¶</a></h3><p>Now that we’ve fitted a line to the data, the question is: why does this model work on new, unseen data?</p>
-<p>The reason the algorithm works is that it has learned the relationship between square footage and price. So when we give the model a new square footage that it hasn’t seen before, it uses the same relationship (represented by the line) to predict the price. As long as the relationship between square footage and price is consistent (meaning similar houses follow similar patterns), the model will make reasonable predictions for new inputs.</p>
+<p>The reason the algorithm works is that <strong>it has learned the relationship between square footage and price. So when we give the model a new square footage that it hasn’t seen before, it uses the same relationship (represented by the line) to predict the price</strong>. As long as the relationship between square footage and price is consistent (meaning similar houses follow similar patterns), the model will make reasonable predictions for new inputs.</p>
+<p>Now our simple example is for a linear relationship between square footage and price.  But most real world relationships are more complex than that.  For example, the price of a house is not just dependent on the square footage, but also on other factors like the number of bedrooms, the location, the age of the house, etc.  A more complex model, such as a neural network, can learn these relationships.</p>
 </div>
 </div>
 </div>
