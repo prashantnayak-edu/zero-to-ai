@@ -68,6 +68,7 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 7. **Vector Embeddings**
    - [GPT style tokenization](./notes/gpt-tokenization.html)
    - [Vector Embeddings](./notes/vector-embeddings.html)
+   - [Vector Store (MicroVectorStore)](./notes/vector-store.html)
 
 8. **Working with Text (basics of GPT)**
    - [Language Modeling Introduction](./notes/lm-intro.html)
