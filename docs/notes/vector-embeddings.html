@@ -7631,8 +7631,13 @@ $$</p>
 <p>So $mouse = [0, 0, 1]$.</p>
 <p>This approach of using a different value with 1 is called a <strong>one-hot encoding</strong>. This is because only one of the values in a vector is 1 for any particular word and the rest are 0.</p>
 <p>Of course you can see the limitation here, in that there is only three words we can represent with this approach. The minute we add another word, we have to increase the size of our vectors by 1.</p>
-<p>One of the other things we would like is if the vectors were able to represent the relationship between the words. For e.g. if we have cat and cheetah, could the vector for each of these words have some things in common, i.e. the vectors should be similar in some way?</p>
-<p>Lets next look at a slightly more sophisticated approach.</p>
+<p>In addition two the limitation above, there are three other important things we would like our vector embeddings to do:</p>
+<ol>
+<li><strong>Meaning:</strong> Each vector should be able to capture the meaning of the word</li>
+<li><strong>Relationship:</strong> We would like the vectors to represent the relationship between the words. For e.g. if we have cat and cheetah, could the vector for each of these words have some things in common, i.e. the vectors should be similar in some way?</li>
+<li><strong>Context:</strong> We would like to be able to capture the context in which a word occurs. For e.g. in the sentence "The cat in the hat", the word "cat" has a different meaning than in the sentence "The dog in the hat".</li>
+</ol>
+<p>Lets next look at a slightly more sophisticated approach that could address some of these issues.</p>
 </div>
 </div>
 </div>
