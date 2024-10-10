@@ -8054,7 +8054,7 @@ a &lt;E&gt;
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Sampling-from-the-model">Sampling from the model<a class="anchor-link" href="#Sampling-from-the-model">¶</a></h4><p>Now that we've "trained" our bigram model (by creating a tensor of letter bigram frequencies), we can use it to create new names. Here's how it works:</p>
 <ol>
-<li><p>We calculate the probabilities for each letter in the alphabet based on the frequency of each bigram in our tensor.</p>
+<li><p>We calculate the probabilities for each letter in the alphabet based on the frequency of each bigram in our tensor. So if the bigram "an" appears 5438 times, then the probability of "a" being followed by "n" is 5438 / total bigrams.  So the higher the frequency of a bigram, the higher the probability.</p>
 </li>
 <li><p>We then normalize these probabilities so that they sum to 1. This means that the sum of the probabilities for all possible next characters is 1.</p>
 </li>
