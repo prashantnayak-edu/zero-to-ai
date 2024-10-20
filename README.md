@@ -94,5 +94,6 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
 
 ### Part 4 - Additional ML and Data Science Topics
    - [75 terms every data scientist should know](./notes/75-terms-ds.ipynb)
+   - [Modular AI Programs using DSPy](./notes/modular-ai-programs.ipynb)
 
 
