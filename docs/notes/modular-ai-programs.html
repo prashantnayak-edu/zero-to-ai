@@ -7720,19 +7720,19 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">dspy</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
 <span class="c1"># Configure DSPy to use OpenAI's GPT-4o mini</span>
-<span class="n">lm</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">OpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">"secret"</span><span class="p">)</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">OpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">"api-key-goes-here"</span><span class="p">)</span>
 <span class="n">dspy</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">lm</span><span class="o">=</span><span class="n">lm</span><span class="p">)</span>
 
 <span class="c1"># Load the privacy policy from file</span>
@@ -7930,50 +7930,6 @@ a.anchor-link {
 <span class="n">optimized_result</span> <span class="o">=</span> <span class="n">evaluate_dcq1</span><span class="p">(</span><span class="n">policy_text</span><span class="p">,</span> <span class="n">num_passes</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">format_output</span><span class="p">(</span><span class="n">optimized_result</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/Users/pnayak/dev/src/education/zero-to-ai/venv/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[2], line 13</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(file_path, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">r</span><span style="color: rgb(175,0,0)">'</span>) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> file:
-<span class="ansi-green-intense-fg ansi-bold">     11</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> file<span style="color: rgb(98,98,98)">.</span>read()
-<span class="ansi-green-fg">---&gt; 13</span> policy_text <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">load_policy_text</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">stepik-privacy-policy.txt</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span> <span style="color: rgb(95,135,135)"># Define input and output models</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span> <span class="ansi-bold" style="color: rgb(0,135,0)">class</span> <span class="ansi-bold" style="color: rgb(0,0,255)">PolicyInput</span>(BaseModel):
-
-Cell <span class="ansi-green-fg">In[2], line 10</span>, in <span class="ansi-cyan-fg">load_policy_text</span><span class="ansi-blue-fg">(file_path)</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">load_policy_text</span>(file_path: <span style="color: rgb(0,135,0)">str</span>) <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">&gt;</span> <span style="color: rgb(0,135,0)">str</span>:
-<span class="ansi-green-fg">---&gt; 10</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">open</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">file_path</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">r</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">'</span><span class="ansi-yellow-bg">)</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> file:
-<span class="ansi-green-intense-fg ansi-bold">     11</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> file<span style="color: rgb(98,98,98)">.</span>read()
-
-File <span class="ansi-green-fg">~/dev/src/education/zero-to-ai/venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py:324</span>, in <span class="ansi-cyan-fg">_modified_open</span><span class="ansi-blue-fg">(file, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    317</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> file <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> {<span style="color: rgb(98,98,98)">0</span>, <span style="color: rgb(98,98,98)">1</span>, <span style="color: rgb(98,98,98)">2</span>}:
-<span class="ansi-green-intense-fg ansi-bold">    318</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-intense-fg ansi-bold">    319</span>         <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">IPython won</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">t let you open fd=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>file<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> by default </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">    320</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">as it is likely to crash IPython. If you know what you are doing, </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">    321</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">you can use builtins</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> open.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">    322</span>     )
-<span class="ansi-green-fg">--&gt; 324</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">io_open</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">file</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: 'stepik-privacy-policy.txt'</pre>
 </div>
 </div>
 </div>
