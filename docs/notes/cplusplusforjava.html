@@ -7548,6 +7548,39 @@ a.anchor-link {
 <li><strong>C++</strong>: Uses separate files for declarations (header files) and implementations (<code>.cpp</code> files), providing a clear separation of interface and implementation.</li>
 </ul>
 <p>This comparison can help visualize the different approaches to file organization in Java and C++ and may make the concepts easier to grasp. Let me know if you'd like any adjustments or further information!</p>
+<h4 id="Functions-vs-Methods-in-C++">Functions vs Methods in C++<a class="anchor-link" href="#Functions-vs-Methods-in-C++">¶</a></h4><pre><code>1.	Functions: In C++, a function is a block of code that performs a specific task and can be defined outside of a class (i.e., global functions). This is the general term used from any code in the same file.
+2.	Methods: When functions are defined within a class, they are typically referred to as methods. This is similar to Java, where methods are the functions that belong to a class.</code></pre>
+<p>In the code below, <code>greet()</code> is a function and <code>displayMessage()</code> is a method.  You can see that they are similar and whether called a function or a method depends on where they are defined and used.</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="c1">// Function defined outside of a class</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Hello from the function! and value x is "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="c1">// Method defined inside a class</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">displayMessage</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Hello from the method! and value x is "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Call the function</span>
+<span class="w">    </span><span class="n">greet</span><span class="p">();</span><span class="w">  </span><span class="c1">// Output: Hello from the function!</span>
+
+<span class="w">    </span><span class="c1">// Create an object of MyClass</span>
+<span class="w">    </span><span class="n">MyClass</span><span class="w"> </span><span class="n">obj</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Call the method</span>
+<span class="w">    </span><span class="n">obj</span><span class="p">.</span><span class="n">displayMessage</span><span class="p">();</span><span class="w">  </span><span class="c1">// Output: Hello from the method!</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>Hope you understand the basics of C++ and are ready to learn more!</p>
 <p>Lets start with the code. Yay!</p>
 <h3 id="Step-1:-Write-the-Code">Step 1: Write the Code<a class="anchor-link" href="#Step-1:-Write-the-Code">¶</a></h3><p>Create the following three files:</p>
 <ol>
