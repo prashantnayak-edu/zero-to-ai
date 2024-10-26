@@ -7596,46 +7596,38 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Part-2:-Explaining-Pointers-and-References">Part 2: Explaining Pointers and References<a class="anchor-link" href="#Part-2:-Explaining-Pointers-and-References">¶</a></h3><div class="highlight"><pre><span></span><span class="gu">## Part 2: Explaining Pointers and References</span>
+<h3 id="Part-2:-Explaining-Pointers-and-References">Part 2: Explaining Pointers and References<a class="anchor-link" href="#Part-2:-Explaining-Pointers-and-References">¶</a></h3><h3 id="Pointers-and-References-Explained">Pointers and References Explained<a class="anchor-link" href="#Pointers-and-References-Explained">¶</a></h3><p>In C++, pointers and references are ways to pass and manipulate variables in functions. Let’s break them down:</p>
+<ul>
+<li><p><strong>Passing by Value</strong>: When you pass a variable by value, you’re giving the function a <strong>copy</strong> of the variable. Any changes made to the variable inside the function <strong>won’t affect</strong> the original variable outside the function.</p>
+<p>Imagine if I made a <strong>photocopy</strong> of your homework and gave it to someone. If they scribbled on the copy, your original homework <strong>wouldn’t be changed</strong>.</p>
+<p><strong>Example</strong>:</p>
+<div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the copy of the variable, not the original</span>
+<span class="p">}</span>
 
-<span class="gu">### Pointers and References Explained</span>
-
-In C++, pointers and references are ways to pass and manipulate variables in functions. Let’s break them down:
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Passing by Value**</span>: When you pass a variable by value, you’re giving the function a <span class="gs">**copy**</span> of the variable. Any changes made to the variable inside the function <span class="gs">**won’t affect**</span> the original variable outside the function.
-
-    Imagine if I made a <span class="gs">**photocopy**</span> of your homework and gave it to someone. If they scribbled on the copy, your original homework <span class="gs">**wouldn’t be changed**</span>.
-
-    <span class="gs">**Example**</span>:
-<span class="sb">    ```cpp</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the copy of the variable, not the original</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-<span class="w">    </span><span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// num is still 5 because we only changed the copy</span>
-<span class="sb">    ```</span>
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Passing by Reference**</span>: When you pass a variable by reference, you’re giving the function <span class="gs">**direct access**</span> to the original variable. Any changes made to the variable inside the function <span class="gs">**will affect**</span> the original variable.
-
-    Imagine you gave someone <span class="gs">**your actual homework**</span>. If they scribbled on it, your <span class="gs">**real homework**</span> would be changed because they are working on the original.
-
-    <span class="gs">**Example**</span>:
-<span class="sb">    ```cpp</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the original variable because we're working with the reference</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-<span class="w">    </span><span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// num is now 6 because we changed the original variable</span>
-<span class="sb">    ```</span>
-
-<span class="gs">**In Summary**</span>:
-<span class="k">-</span><span class="w"> </span><span class="gs">**Passing by value**</span>: like giving someone a <span class="gs">**photocopy**</span> (changes don’t affect the original).
-<span class="k">-</span><span class="w"> </span><span class="gs">**Passing by reference**</span>: like giving someone the <span class="gs">**real thing**</span> (changes do affect the original).
+<span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<span class="c1">// num is still 5 because we only changed the copy</span>
 </pre></div>
+</li>
+<li><p><strong>Passing by Reference</strong>: When you pass a variable by reference, you’re giving the function <strong>direct access</strong> to the original variable. Any changes made to the variable inside the function <strong>will affect</strong> the original variable.</p>
+<p>Imagine you gave someone <strong>your actual homework</strong>. If they scribbled on it, your <strong>real homework</strong> would be changed because they are working on the original.</p>
+<p><strong>Example</strong>:</p>
+<div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the original variable because we're working with the reference</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<span class="c1">// num is now 6 because we changed the original variable</span>
+</pre></div>
+</li>
+</ul>
+<p><strong>In Summary</strong>:</p>
+<ul>
+<li><strong>Passing by value</strong>: like giving someone a <strong>photocopy</strong> (changes don’t affect the original).</li>
+<li><strong>Passing by reference</strong>: like giving someone the <strong>real thing</strong> (changes do affect the original).</li>
+</ul>
 </div>
 </div>
 </div>
