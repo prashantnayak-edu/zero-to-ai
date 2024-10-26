@@ -97,3 +97,7 @@ We stand on the shoulders of giants in creating this course, drawing inspiration
    - [Modular AI Programs using DSPy](./notes/modular-ai-programs.ipynb)
 
 
+### Miscellaneous
+- [C++ for Java Students](./notes/cplusplusforjava.ipynb)
+
+
