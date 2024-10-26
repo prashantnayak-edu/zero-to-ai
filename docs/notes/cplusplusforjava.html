@@ -7603,11 +7603,13 @@ a.anchor-link {
 <p><strong>Example</strong>:</p>
 <div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the copy of the variable, not the original</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"value of x inside the method: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
 <span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
 <span class="c1">// num is still 5 because we only changed the copy</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"value of num after the method call: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 </pre></div>
 </li>
 <li><p><strong>Passing by Reference</strong>: When you pass a variable by reference, you’re giving the method <strong>direct access</strong> to the original variable. Any changes made to the variable inside the method <strong>will affect</strong> the original variable.</p>
@@ -7615,10 +7617,12 @@ a.anchor-link {
 <p><strong>Example</strong>:</p>
 <div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">addOne</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// This changes the original variable because we're working with the reference</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"value of x inside the method: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
 <span class="n">addOne</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"value of num after the method call: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="c1">// num is now 6 because we changed the original variable</span>
 </pre></div>
 </li>
