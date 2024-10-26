@@ -7523,6 +7523,30 @@ a.anchor-link {
 <li><strong>Header File (<code>MyClass.h</code>)</strong>: Think of this like Java interfaces or class declarations. It defines <strong>what</strong> the class does (but not <strong>how</strong>).</li>
 <li><strong>Implementation File (<code>MyClass.cpp</code>)</strong>: This is where the actual methods of the class are implemented (similar to the body of methods in Java).</li>
 </ol>
+<h2 id="Project-Structure-Comparison">Project Structure Comparison<a class="anchor-link" href="#Project-Structure-Comparison">¶</a></h2><h3 id="Java-Project-Structure">Java Project Structure<a class="anchor-link" href="#Java-Project-Structure">¶</a></h3><p>MyJavaProject/
+├── Main.java
+└── MyClass.java</p>
+<ul>
+<li><strong>Main.java</strong>: Contains the <code>main</code> method, serving as the entry point of the program.</li>
+<li><strong>MyClass.java</strong>: Defines the <code>MyClass</code> class, which may contain methods and attributes.</li>
+</ul>
+<h3 id="C++-Project-Structure">C++ Project Structure<a class="anchor-link" href="#C++-Project-Structure">¶</a></h3><p>MyCppProject/
+├── main.cpp
+├── MyClass.h
+└── MyClass.cpp</p>
+<ul>
+<li><strong>main.cpp</strong>: The entry point of the program, similar to <code>Main.java</code> in Java.</li>
+<li><strong>MyClass.h</strong>: Header file defining the <code>MyClass</code> class and its methods.</li>
+<li><strong>MyClass.cpp</strong>: Implementation file that contains the definitions of the methods declared in <code>MyClass.h</code>.</li>
+</ul>
+<hr/>
+<h3 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h3><p>This structure should help to clarify how Java and C++ organize their source files:</p>
+<ul>
+<li><strong>Java</strong>: Typically keeps everything in a single directory with <code>.java</code> files.</li>
+<li><strong>C++</strong>: Uses separate files for declarations (header files) and implementations (<code>.cpp</code> files), providing a clear separation of interface and implementation.</li>
+</ul>
+<p>This comparison can help visualize the different approaches to file organization in Java and C++ and may make the concepts easier to grasp. Let me know if you'd like any adjustments or further information!</p>
+<p>Lets start with the code. Yay!</p>
 <h3 id="Step-1:-Write-the-Code">Step 1: Write the Code<a class="anchor-link" href="#Step-1:-Write-the-Code">¶</a></h3><p>Create the following three files:</p>
 <ol>
 <li><p><strong><code>MyClass.h</code></strong>:</p>
